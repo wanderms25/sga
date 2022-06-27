@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command:  bash -c "npm start"
+    environment:
+      - CORSHEADER="http://0.0.0.0:3000"
+      - PROXY=true
+    ports:
+      - 3000:3000
+    volumes:
+      - node_modules:/root/node_modules
+      - .:/sga
+    networks:
+      - service
+volumes:
+  node_modules:
+networks:
+  service:
