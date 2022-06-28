@@ -3,23 +3,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <p>stardust</p>
+      <input id="" alt="" type="" name="" placeholder="texto..." className="input w-96"></input>
+      <button type="button" className="button bg-primaryColor text-white text-sm">Button</button>
+
+      <p>tailwind</p>
+      <div class="border-2 border-indigo-600 ...">ssss</div>
+    </>    
+  )
 }
 
 export default App;
